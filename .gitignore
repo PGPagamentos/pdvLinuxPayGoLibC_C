@@ -1,0 +1,6 @@
+gccDebug64/
+gccRelease/
+gccRelease64/
+gccDebug/
+*.zip
+

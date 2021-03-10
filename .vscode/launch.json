@@ -1,0 +1,48 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb)PGWebLibTest",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/gccDebug64/PGWebLibTest.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/gccDebug64",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "Teste.py",
+            "type": "python",
+            "request": "launch",
+            "pythonPath": "${config:python.pythonPath}",
+            "program": "${workspaceFolder}/teste.py",
+            "args": [],
+            //"stopAtEntry": false,
+            "cwd": "${workspaceFolder}/gccDebug64",
+            //"environment": [],
+            //"externalConsole": false,
+            //"MIMode": "gdb",
+        },
+		{ 
+            "name": "(gdb) Attach PGWL",
+            "type": "cppdbg",
+            "request": "attach",
+            "program": "${config:python.pythonPath}",
+            "processId": "${command:pickProcess}",
+            "MIMode": "gdb"
+        }
+    ]
+}
