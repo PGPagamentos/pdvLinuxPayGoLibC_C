@@ -27,7 +27,7 @@ Além disso, a biblioteca necessita que esteja instalado open ssl, versão 1.1.1
 
 > $ openssl version
 
-![imagem openssl](./Imagens/openssl.PNG)
+![imagem openssl](./Imagens/openSSL.PNG)
 
 Para executar o aplicativo, basta executá-lo pelo terminal da pasta onde o executável se encontra:
 
