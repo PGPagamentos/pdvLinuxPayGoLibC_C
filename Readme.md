@@ -8,21 +8,23 @@ Trata-se de um console de testes que permite testar a interface da biblioteca, a
 
 ## 2. Compilação
 
-A aplicação é compilada a partir de makefile e tem quatro configurações diferentes:
+A aplicação é compilada a partir de um makefile e tem quatro configurações diferentes:
 
-- Release
-- Release64
-- Debug
-- Debug64
+- Test (Versão de release 32 bits)
+- Test64 (Versão de release 64 bits)
+- TestDebug (Versão de debug 32 bits)
+- TestDebug64 (Versão de debug 64 bits)
 
-Para buildar o projeto, basta executar no terminal:
+Para compilar o projeto, basta executar no terminal:
 > $ make <configuração>
+
+* OBS: Projeto compilado utilizando-se o GNU Make versão 4.2.1 e GCC versão gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0 numa máquina Ubuntu 20.04.
 
 ## 3. Operação
 
 Para executar a aplicação, basta rodar o executável compilado em uma pasta que contenha a PGWebLib.so.
 
-Destaca-se que ambos os aplicativos devem ser compatíveis para que seja possível a execução (por exemplo, ambos compilados como 64 bits).
+Importante ressaltar que ambos os aplicativos devem ser compatíveis para que seja possível a execução (por exemplo, ambos compilados como 64 bits).
 Além disso, a biblioteca necessita que esteja instalado open ssl, versão 1.1.1 para o correto funcionamento. Para conferir a versão no seu sistema, basta executar no terminal:
 
 > $ openssl version
@@ -37,7 +39,7 @@ Assim que executado, é exibido uma tela com todas as funções disponíveis:
 
 ![imagem  Init](./Imagens/Operacoes.PNG )
 
-Seguindo o fluxo da dll, primeiro deve-se chamar PW_iInit, informando um diretório que a aplicação tenha permissões para leitura/escrita.
+Seguindo o fluxo da biblioteca, primeiro deve-se chamar PW_iInit, informando um diretório que a aplicação tenha permissões para leitura/escrita.
 
 Após isso, é necessário efetuar uma operação de instalação para habilitar o ponto de captura para transacionar com o Pay&Go Web. Para efetuá-la, pode-se selecionar a operação:
 > x - Teste de instalacao
