@@ -45,7 +45,7 @@ Após isso, é necessário efetuar uma operação de instalação para habilitar
 Após isso, o ponto de captura está habilitado para efetuar as demais operações. Estas podem ser efetuadas pelas funções que abstraem os fluxos: 
 
 
-![imagem  abstração](./Imagens/abstracoes.PNG )
+![imagem  abstração](./Imagens/Abstracoes.PNG )
 
 
 Ou chamando as funções da API da biblioteca diretamente:
