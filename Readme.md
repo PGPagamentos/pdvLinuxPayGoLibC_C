@@ -18,11 +18,11 @@ A aplicação é compilada a partir de um makefile e tem quatro configurações 
 Para compilar o projeto, basta executar no terminal:
 > $ make <configuração>
 
-* OBS: Projeto compilado utilizando-se o GNU Make versão 4.2.1 e GCC versão gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0 numa máquina Ubuntu 20.04.
+* OBS: Projeto compilado utilizando-se o GNU Make versão 4.2.1 e GCC versão gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0 numa máquina Ubuntu 20.04 64bits.
 
 ## 3. Operação
 
-Para executar a aplicação, basta rodar o executável compilado em uma pasta que contenha a PGWebLib.so.
+Para executar a aplicação, basta rodar o executável compilado em uma pasta que contenha a PGWebLib.so. Na pasta ./Compilados/ é possível encontrar tanto a versão de 32 bits quanto 64 bits da biblioteca.
 
 Importante ressaltar que ambos os aplicativos devem ser compatíveis para que seja possível a execução (por exemplo, ambos compilados como 64 bits).
 Além disso, a biblioteca necessita que esteja instalado open ssl, versão 1.1.1 para o correto funcionamento. Para conferir a versão no seu sistema, basta executar no terminal:
