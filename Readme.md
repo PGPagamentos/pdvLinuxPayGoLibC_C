@@ -1,4 +1,5 @@
-# PGWebLibTest 
+# pdvLinuxPayGoLibC_C
+ 
 
 ## 1. Descrição
 
@@ -57,4 +58,7 @@ Para detalhamento do fluxos de operação, consultar o documento:
 
 ## 4. Considerações adicionais
 
-Caso sua ide apresente os fontes com caracteres ilegíveis, trocar o formato de exibição para ANSI/Windows 1252
+Caso sua IDE apresente os fontes com caracteres ilegíveis, trocar o formato de exibição para ANSI/Windows 1252.
+Caso a biblioteca não consiga se comunicar com o PIN-pad, verificar com o fabricante do terminal como configurar para rodar no linux.
+Para gertec:
+[Manual de instalação gertec PPC-900](https://www.bztech.com.br/arquivos/manual-instalacao-linux-gertec-ppc-900.pdf)
